@@ -1,0 +1,69 @@
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+input[type="text"]:focus-visible{
+  outline: none;
+  background-color: var(--background-light);
+  border-color: var(--border-light);
+}
+
+#generate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* QR Options Container */
+.qr-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+/* Label i input zajedno */
+.qr-options label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* Input polja za boju i broj */
+.qr-options input[type="color"],
+.qr-options input[type="number"] {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Hover i focus efekti */
+.qr-options input[type="color"]:hover,
+.qr-options input[type="number"]:hover,
+.qr-options input[type="color"]:focus,
+.qr-options input[type="number"]:focus {
+  border-color: var(--olive);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  outline: none;
+}
+
+/* Brojčani input: fiksna širina za lep izgled */
+.qr-options input[type="number"] {
+  width: 80px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QR Generator</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/meta.css">
+  <link rel="stylesheet" href="static/css/tabs.css">
+  <link rel="stylesheet" href="static/css/scan.css">
+  <link rel="stylesheet" href="static/css/generate.css">
+  <link rel="stylesheet" href="static/css/history.css">
+</head>
+<body>
+
+  <!-- Custom Title Bar -->
+  <div id="titlebar">
+    <div class="title">QR App</div>
+    <div class="window-controls">
+      <button id="min-btn">–</button>
+      <button id="max-btn">□</button>
+      <button id="close-btn">×</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn" data-tab="generate">Generate QR</button>
+    <button class="tab-btn" data-tab="scan">Scan QR</button>
+    <button class="tab-btn" data-tab="history">History</button>
+  </div>
+
+  <!-- Ovde se učitava partial -->
+  <div id="content"></div>
+
+  <script src="renderer.js"></script>
+  <script src="load-partials.js"></script>
+</body>
+</html>

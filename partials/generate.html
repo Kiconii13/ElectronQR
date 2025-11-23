@@ -1,0 +1,34 @@
+<div id="generate">
+    <input id="text" type="text" placeholder="Enter text or URL" />
+    
+    <div class="qr-options">
+      <label>
+        Foreground color:
+        <input type="color" id="qr-foreground" value="#000000">
+      </label>
+      <label>
+        Background color:
+        <input type="color" id="qr-background" value="#ffffff">
+      </label>
+      <label>
+        Size:
+        <input type="number" id="qr-size" value="500" min="100" max="1000">
+      </label>
+
+      <div class="form-group">
+        <label for="qr-logo" class="file-input-label">Upload Logo</label>
+        <input type="file" id="qr-logo" accept="image/*">
+        <div id="qr-logo-name">No file selected</div>
+      </div>
+  </div>
+    
+    <button id="generateBtn">Generate QR</button>
+
+
+
+    <div id="preview-container">
+      <img id="qr-preview" />
+    </div>
+
+    <button id="saveBtn" disabled>Save PNG</button>
+</div>

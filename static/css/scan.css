@@ -1,0 +1,75 @@
+input[type="file"]{
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.file-input-wrapper {
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--background-light);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.file-input-label:hover {
+  background: var(--background-very-light);
+}
+
+.file-input-label:active {
+  transform: scale(0.97);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#scan-file-name {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text);
+  opacity: 0.8;
+  text-align: center;
+}
+
+#preview-container {
+  display: flex;
+  justify-content: center;
+}
+
+#qr-preview {
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--border-light);
+}
+
+p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: var(--text);
+  word-wrap: break-word;
+  text-align: center;
+  background-color: var(--background-light);
+  padding: 10px;
+  min-width: 300px;
+  border: solid 3px var(--border);
+  border-radius: 5px;
+  content: "No QR code scanned yet.";
+}
