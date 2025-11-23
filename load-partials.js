@@ -6,13 +6,13 @@ async function loadPartial(name) {
     const html = await fetch(`partials/${name}.html`).then(res => res.text());
     container.innerHTML = html;
 
-    // nakon učitavanja partial-a, povezujemo event handlere iz renderer.js
+    // After loading, attach event handlers if defined
     if (window.attachHandlers) {
         attachHandlers(name);
     }
 }
 
-// tab dugmad
+// tab buttons
 document.querySelectorAll(".tab-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         loadPartial(btn.dataset.tab);

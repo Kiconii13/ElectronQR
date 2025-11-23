@@ -7,13 +7,14 @@ let win;
 function createWindow() {
   win = new BrowserWindow({
     width: 600,
-    height: 700,
+    height: 800,
     frame: false,
     titleBarStyle: "hidden",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false
-    }
+    },
+    icon: path.join(__dirname, "static", "ElectronQR.png")
   });
 
   win.loadFile("index.html");
